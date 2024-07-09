@@ -11,7 +11,7 @@ import NavBar from "../components/NavBar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={PolygonZkevmTestnet}>
+    <ThirdwebProvider activeChain={base}>
       <ChakraProvider>
         <NavBar/>
         <Component {...pageProps} />
