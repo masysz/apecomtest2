@@ -30,7 +30,7 @@ const Home: NextPage = () => {
     return (
       <Container maxW={"1200px"}>
         <Flex direction={"column"} h={"100vh"} justifyContent={"center"} alignItems={"center"}>
-          <Heading my={"40px"}>Welcom to Ape Commerce</Heading>
+          <Heading my={"40px"}>Welcome to Ape Commerce</Heading>
           <ConnectWallet />
         </Flex>
       </Container>
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
     <Container maxW={"1200px"}>
       <SimpleGrid columns={2} spacing={10}>
         <Card p={5}>
-          <Heading>Farmer:</Heading>
+          <Heading>Worker:</Heading>
           <SimpleGrid columns={2} spacing={10}>
             <Box>
               {ownedFarmers?.map((nft) => (
@@ -73,7 +73,7 @@ const Home: NextPage = () => {
               ))}
             </Box>
             <Box>
-              <Text fontSize={"small"} fontWeight={"bold"}>$CARROT Balance:</Text>
+              <Text fontSize={"small"} fontWeight={"bold"}>$pAPECOM Balance:</Text>
                 {rewardBalance && (
                     <p>{ethers.utils.formatUnits(rewardBalance, 18)}</p>
                   )}
